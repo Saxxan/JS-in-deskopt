@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicando JS</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Scripts aquí cargan primero y bloquean la web -->
+
+    <!-- La palabra clave defer se asegura de que el JS se cargue
+    cuando se ha cargado el documento HTML y CSS -->
+    <script defer src="./index.js"></script>
+
+</head>
+
+<body>
+    <h1 class="title" id="main--title">Estos elementos tiene clase title</h1>
+    <h2 class="subtitle">texto de despues</h2>
+
+    <h1 class="title" id="main--title">Estos elementos tiene clase title</h1>
+    <h1 class="title" id="main--title">Estos elementos tiene clase title</h1>
+    <h1 class="title" id="main--title">Estos elementos tiene clase title</h1>
+    <h1 class="title" id="main--title">Estos elementos tiene clase title</h1>
+
+    <h3 class="js-title">H3 en JS</h3>
+
+
+    <!-- scripts al final del documento cuando el documento html ya esté cargado -->
+    <!-- <script src="./index.js"></script> -->
+
+
+    <!-- Ejercicio 1 JS -->
+    <hr>
+    <h1 class="e">Hola que pasa</h1>
+    <h1 class="e">estamos probando JS</h1>
+    <h1 class="e element">Click para ocultar</h1>
+    <h1 class="e">si no ves el de arriba</h1>
+    <h1 class="e">ha sido un éxito</h1>
+
+
+    <hr>
+    <!-- Ejercicio 2 JS bola movimiento aleatorio -->
+    <div class="floating"></div>
+
+
+    <hr>
+    <!-- Ejercicio 3 JS añadir clase a elemento -->
+    <div class="soso">Este elemento es muy soso, click para estilar.</div>
+
+
+    <hr>
+    <!-- innerHTML modifica todo el contenido HTML dentro de un elemento -->
+    <div class="container">
+        <p class="text">innerHTML vacío</p>
+
+        <h2>Que pasa crack</h2>
+    </div>
+
+
+    <hr>
+    <!-- Ejercicio 4 JS modificar elementos -->
+    <div class="elemento">HOLA</div>
+    <div class="elemento">HOLA</div>
+    <div class="elemento">HOLA</div>
+    <div class="elemento">HOLA</div>
+    <div class="elemento">HOLA</div>
+    <div class="elemento">HOLA</div>
+    <div class="elemento">HOLA</div>
+    <div class="elemento">HOLA</div>
+
+    <button onclick="oneActive()">Clase activa en un elemento</button>
+    <button onclick="cleanClasses()">Limpiar clases activas</button>
+    <button onclick="multipleActives()">Clase activa en todos los elementos</button>
+
+
+    <hr>
+    <!-- Ejercicio 5 JS Eventos (addEventListener) -->
+    <button class="boton">ACEPTAR</button>
+
+
+</body>
+</html>

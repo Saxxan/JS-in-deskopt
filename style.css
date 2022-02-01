@@ -1,0 +1,37 @@
+.floating {
+    background: linear-gradient(143deg, #59D8D9, #330867);
+    animation: candy 10s ease infinite;
+    background-size: 200% 150%;
+    border-radius: 100%;
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    transition: all 5s;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+  
+@keyframes candy {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+.bonito {
+    background-color: orange;
+    color: rgb(20, 73, 68);
+    font-size: 25px;
+}
+
+.active {
+    color: red;
+}
+
+.boton {
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+}
