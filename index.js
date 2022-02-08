@@ -112,3 +112,60 @@ button.addEventListener('click', function(event){
     // event.target es el que emite el evento
     event.target.style.boxShadow = '5px 5px 5px black';
 });
+
+
+
+// JUEGO TRES EN RAYA CON JS
+let celdas = document.querySelectorAll('.gameCell');
+let result = document.querySelector('.gameResult');
+const buttonRestart = document.querySelector('.gameOver');
+let turno = 0;
+
+function evaluarTablero() {
+    if(celdas[0].textContent==celdas[1].textContent && celdas[0].textContent==celdas[2].textContent && celdas[0].textContent) {
+        return true;
+    } else if(celdas[3].textContent==celdas[4].textContent && celdas[3].textContent==celdas[5].textContent && celdas[3].textContent) {
+        return true;
+    } else if(celdas[6].textContent==celdas[7].textContent && celdas[6].textContent==celdas[8].textContent && celdas[6].textContent) {
+        return true;
+    } else if(celdas[0].textContent==celdas[3].textContent && celdas[0].textContent==celdas[6].textContent && celdas[0].textContent) {
+        return true;
+    } else if(celdas[1].textContent==celdas[4].textContent && celdas[1].textContent==celdas[7].textContent && celdas[1].textContent) {
+        return true;
+    } else if(celdas[2].textContent==celdas[5].textContent && celdas[2].textContent==celdas[8].textContent && celdas[2].textContent) {
+        return true;
+    } else if(celdas[0].textContent==celdas[4].textContent && celdas[0].textContent==celdas[8].textContent && celdas[0].textContent) {
+        return true;
+    } else if(celdas[2].textContent==celdas[4].textContent && celdas[2].textContent==celdas[6].textContent && celdas[2].textContent) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function celdaPulsada(e) {
+    turno++;
+    const celda = e.target;
+    if(turno % 2 === 0) {
+        celda.textContent = 'X';
+        celda.style.color = '#B32D45';
+    } else {
+        celda.textContent = 'O';
+        celda.style.color = '#BF8830';
+    }
+    
+    if(evaluarTablero()) {
+        result.textContent = 'Han ganado los ' + celda.textContent;
+    }
+}
+
+celdas.forEach(function(celda){
+    celda.addEventListener('click', celdaPulsada);
+});
+
+buttonRestart.addEventListener('click', function(){
+    celdas.forEach(function(celda) {
+        celda.textContent = '';
+    });
+    result.textContent = '';
+});

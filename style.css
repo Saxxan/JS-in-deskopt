@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .floating {
     background: linear-gradient(143deg, #59D8D9, #330867);
     animation: candy 10s ease infinite;
@@ -34,4 +38,38 @@
     height: 50px;
     text-align: center;
     font-size: 30px;
+}
+
+
+/* TRES EN RAYA CON JS */
+
+.gameTitle, .gameResult, .gameOver {
+    width: 200px;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #B32D45;
+    color: white;
+    border-radius: 5px;
+}
+
+.gameContainer {
+    width: 300px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gameCell {
+    width: 100px;
+    height: 70px;
+    background-color: #006C51;
+    border: 2px solid #5FD2B5;
+    font-size: 55px;
+    text-align: center;
+}
+
+.gameCell:hover {
+    background-color: #00A67C;
 }
