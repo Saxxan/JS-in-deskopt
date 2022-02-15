@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clon Netflix</title>
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+    <style>
+        .swiper {
+        width: 100vw;
+        }
+
+        .swiper-slide {
+            border: 1px solid black;
+            width: 320px;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
+    <!-- Slider main container -->
+	<div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+        </div>
+
+        <div class="selected-movie"></div>
+
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     
+        <!-- scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
