@@ -21,6 +21,9 @@ document.querySelectorAll('.swiper-slide').forEach(function(slide) {
 	slide.addEventListener('click', function() {
 		// Podemos recuperar la información del atributo data usando la api "dataset"
 		const index = slide.dataset.index;
+        const selectedMovie = list[index];
+
+        document.querySelector('.selected-movie').innerHTML = selectedMovie.name;
 	});
 });
 
