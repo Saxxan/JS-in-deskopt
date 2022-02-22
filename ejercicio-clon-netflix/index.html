@@ -13,20 +13,26 @@
         }
 
         .swiper {
-        width: 100vw;
-        height: 100px;
-        margin-bottom: 50px;
+            width: 90vw;
+            margin: 0 auto;
         }
 
         .swiper-slide {
-            border: 1px solid black;
-            width: 320px;
+            max-width: 200px;
         }
 
-        .swiper-slide img {
-            width: 100%;
-            height: 100%;
+        div[class^="swiper-button"] {
+            color: grey;
+        }
+
+        div[class^="swiper-button"]:hover {
+            color: white;
+        }
+
+        img {
             object-fit: cover;
+            width: 200px;
+            height: 275px;
         }
     </style>
 </head>
@@ -34,7 +40,16 @@
 
     <!-- Header -->
     <header>
-        
+        <h2>Clon Netflix</h2>
+        <nav class="menu">
+            <ul class="menu__options">
+                <li class="menu__options__option"></li>
+                <li class="menu__options__option"></li>
+                <li class="menu__options__option"></li>
+                <li class="menu__options__option"></li>
+                <li class="menu__options__option"></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Slider main container -->
@@ -44,55 +59,9 @@
             <!-- Slides -->
         </div>
 
-        <div class="selected-movie"></div>
-
-        <!-- pagination -->
-        <div class="swiper-pagination"></div>
-
         <!-- navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
-    
-        <!-- scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
-
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-        </div>
-
-        <div class="selected-movie"></div>
-
-        <!-- pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    
-        <!-- scrollbar -->
-        <div class="swiper-scrollbar"></div>
-    </div>
-
-    <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-        </div>
-
-        <div class="selected-movie"></div>
-
-        <!-- pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    
-        <!-- scrollbar -->
-        <div class="swiper-scrollbar"></div>
     </div>
 
     <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
