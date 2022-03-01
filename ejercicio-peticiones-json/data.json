@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Carlos",
+        "surname": "Jiménez Sánchez",
+        "cp": 46020,
+        "keeper": true
+    },
+
+    {
+        "name": "Sofía",
+        "surname": "Lucas Martínez",
+        "cp": 46020,
+        "keeper": true
+    },
+
+    {
+        "name": "Ginés",
+        "surname": "Rovira Marco",
+        "cp": 46020,
+        "keeper": true
+    },
+
+    {
+        "name": "Roberto",
+        "surname": "Adánez Puche",
+        "cp": 46020,
+        "keeper": true
+    },
+
+    {
+        "name": "María",
+        "surname": "Sanchis López",
+        "cp": 46020,
+        "keeper": true
+    }
+]
