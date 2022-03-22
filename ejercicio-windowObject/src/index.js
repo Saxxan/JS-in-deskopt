@@ -1,4 +1,4 @@
-import { renderContact, renderContacts } from "./contact";
+import { renderContact, renderContacts } from "./contacts";
 import { storeUser } from "./store";
 
 const usersInText = window.localStorage.getItem('users');
@@ -10,7 +10,7 @@ function paintAndReset(name, surname, email, tel) {
     document.querySelector('.contact-list').innerHTML += html;
 }
 
-document.querySelector('#add').addEventListener('click', function() {
+document.getElementById('add').addEventListener('click', function() {
     const name = document.querySelector('#name').value;    
     const surname = document.querySelector('#surname').value;
     const email = document.querySelector('#email').value;
