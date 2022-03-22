@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts app: Ejercicio Window Object</title>
+    <link rel="stylesheet" href="./style.css"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Agenda de contactos</h1>
+    </header>
+    <main>
+        <form name="contact">
+            <div class="fields">
+                <input class="input" id="name" placeholder="Nombre" name="name" required>
+                <input class="input" id="surname" placeholder="Apellido" name="surname" required>
+                <input class="input" id="email" placeholder="Email" type="email" required name="email">
+                <input class="input" id="tel" placeholder="Teléfono" name="tel" type="number" required>
+            </div>
+            <button id="add" type="button">Añadir contacto</button>
+        </form>
+        <div class="contact-list"></div>
+    </main>
+    <script src="./src/index.js"></script>
+</body>
+</html>

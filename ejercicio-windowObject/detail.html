@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts app</title>
+    <link rel="stylesheet" href="./style.css"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Detail</h1>
+    </header>
+    <main>
+        <script>
+            const renderContact = function(name, surname, email, tel) {
+                return `<div class="contact">
+                    <p>${name} ${surname}</p>
+                    <a href="mailto:${email}">${email}</a>
+                    <a href="tel:${tel}">${tel}</a>
+                </div>`
+            }
+
+
+            const parametersInText = window.location.search;
+            const parameters = new URLSearchParams(parametersInText);
+
+            const userIndex = parameters.get('user');
+
+            const usersInText = window.localStorage.getItem('users');
+            const users = JSON.parse(usersInText);
+
+            document.body.innerHTML = renderContact(users[userIndex].name, users[userIndex].surname, users[userIndex].email, users[userIndex].tel)
+
+        </script>
+    </main>
+</body>
+</html>
